@@ -18,7 +18,7 @@ final class TransactionCell: UITableViewCell, Reusable {
     
     fileprivate lazy var dateLabel = UILabel().then {
         $0.textColor = textClr
-        $0.font = UIFont.systemFont(ofSize: 18, weight: .regular)
+        $0.font = UIFont.systemFont(ofSize: 14, weight: .regular)
         $0.numberOfLines = 0
         $0.adjustsFontSizeToFitWidth = false
         $0.lineBreakMode = NSLineBreakMode.byTruncatingTail

@@ -16,7 +16,7 @@ class TabBarViewController: UITabBarController {
         MainTabBarItem(title: "History", icon: ( #imageLiteral(resourceName: "first"), #imageLiteral(resourceName: "first")),
                        controller: TransactionsViewController()),
         MainTabBarItem(title: "Converter", icon: ( #imageLiteral(resourceName: "first"), #imageLiteral(resourceName: "first")),
-                       controller: RealtimeBPIViewController())
+                       controller: ConverterViewController())
         
     ]
     

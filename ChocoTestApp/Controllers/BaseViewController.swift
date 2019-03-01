@@ -18,6 +18,8 @@ class BaseViewController: UIViewController {
     }
 }
 
+
+
 extension UIViewController {
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
@@ -41,4 +43,3 @@ extension UIImage {
         return image
     }
 }
-

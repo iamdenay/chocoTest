@@ -6,6 +6,7 @@ import Sugar
 final class BPICell: UITableViewCell, Reusable {
     
     var currency = ""
+    var price = 0.0
     fileprivate var textClr = Settings.textColor
     fileprivate var container = UIView() // container for visible part
 
@@ -86,6 +87,9 @@ final class BPICell: UITableViewCell, Reusable {
         }
         if let rate = data.rate{
             self.rateLabel.text = rate
+            let result = rate.filter("01234567890.".contains)
+            self.price = result.toDouble()!
+
         }
     }
     

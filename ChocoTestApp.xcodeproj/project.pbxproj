@@ -11,6 +11,8 @@
 		2325E273222931B10067B951 /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325E272222931B10067B951 /* TransactionCell.swift */; };
 		2325E275222939840067B951 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325E274222939840067B951 /* TransactionsViewController.swift */; };
 		2325E27722293D3C0067B951 /* TransactionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325E27622293D3C0067B951 /* TransactionDetailViewController.swift */; };
+		2325E279222942850067B951 /* CurrencyPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325E278222942850067B951 /* CurrencyPickerView.swift */; };
+		2325E27B22294BEB0067B951 /* ConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325E27A22294BEB0067B951 /* ConverterViewController.swift */; };
 		23B415AB2228302E00283959 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B415AA2228302E00283959 /* AppDelegate.swift */; };
 		23B415B42228302F00283959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23B415B32228302F00283959 /* Assets.xcassets */; };
 		23B415C32228307B00283959 /* BPIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B415C22228307B00283959 /* BPIRepository.swift */; };
@@ -29,6 +31,8 @@
 		2325E272222931B10067B951 /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
 		2325E274222939840067B951 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
 		2325E27622293D3C0067B951 /* TransactionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailViewController.swift; sourceTree = "<group>"; };
+		2325E278222942850067B951 /* CurrencyPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPickerView.swift; sourceTree = "<group>"; };
+		2325E27A22294BEB0067B951 /* ConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterViewController.swift; sourceTree = "<group>"; };
 		23B415A72228302E00283959 /* ChocoTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChocoTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23B415AA2228302E00283959 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23B415B32228302F00283959 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -123,6 +127,7 @@
 			children = (
 				23B415CA222831C900283959 /* BPICell.swift */,
 				2325E272222931B10067B951 /* TransactionCell.swift */,
+				2325E278222942850067B951 /* CurrencyPickerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -135,6 +140,7 @@
 				23B415D02228321900283959 /* RealtimeBPIViewController.swift */,
 				2325E274222939840067B951 /* TransactionsViewController.swift */,
 				2325E27622293D3C0067B951 /* TransactionDetailViewController.swift */,
+				2325E27A22294BEB0067B951 /* ConverterViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -294,8 +300,10 @@
 				23B415D12228321900283959 /* RealtimeBPIViewController.swift in Sources */,
 				2325E27722293D3C0067B951 /* TransactionDetailViewController.swift in Sources */,
 				23B415C32228307B00283959 /* BPIRepository.swift in Sources */,
+				2325E279222942850067B951 /* CurrencyPickerView.swift in Sources */,
 				23B415CD222831ED00283959 /* BaseViewController.swift in Sources */,
 				23B415CB222831C900283959 /* BPICell.swift in Sources */,
+				2325E27B22294BEB0067B951 /* ConverterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
