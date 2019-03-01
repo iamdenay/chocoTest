@@ -7,23 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2325E27122292CBB0067B951 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325E27022292CBB0067B951 /* Transaction.swift */; };
+		2325E273222931B10067B951 /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325E272222931B10067B951 /* TransactionCell.swift */; };
+		2325E275222939840067B951 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325E274222939840067B951 /* TransactionsViewController.swift */; };
+		2325E27722293D3C0067B951 /* TransactionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2325E27622293D3C0067B951 /* TransactionDetailViewController.swift */; };
 		23B415AB2228302E00283959 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B415AA2228302E00283959 /* AppDelegate.swift */; };
-		23B415AD2228302E00283959 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B415AC2228302E00283959 /* FirstViewController.swift */; };
-		23B415AF2228302E00283959 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B415AE2228302E00283959 /* SecondViewController.swift */; };
-		23B415B22228302E00283959 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23B415B02228302E00283959 /* Main.storyboard */; };
 		23B415B42228302F00283959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23B415B32228302F00283959 /* Assets.xcassets */; };
-		23B415B72228302F00283959 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23B415B52228302F00283959 /* LaunchScreen.storyboard */; };
+		23B415C32228307B00283959 /* BPIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B415C22228307B00283959 /* BPIRepository.swift */; };
+		23B415C52228308F00283959 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B415C42228308F00283959 /* Settings.swift */; };
+		23B415C72228319600283959 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B415C62228319600283959 /* Response.swift */; };
+		23B415C92228319E00283959 /* RealtimeBPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B415C82228319E00283959 /* RealtimeBPI.swift */; };
+		23B415CB222831C900283959 /* BPICell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B415CA222831C900283959 /* BPICell.swift */; };
+		23B415CD222831ED00283959 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B415CC222831ED00283959 /* BaseViewController.swift */; };
+		23B415CF2228320300283959 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B415CE2228320300283959 /* TabBarController.swift */; };
+		23B415D12228321900283959 /* RealtimeBPIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B415D02228321900283959 /* RealtimeBPIViewController.swift */; };
+		7FFA04FFA1DC72627E33F883 /* Pods_ChocoTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F07A6791CDF6F1A580BE2ED9 /* Pods_ChocoTestApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2325E27022292CBB0067B951 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		2325E272222931B10067B951 /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
+		2325E274222939840067B951 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
+		2325E27622293D3C0067B951 /* TransactionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailViewController.swift; sourceTree = "<group>"; };
 		23B415A72228302E00283959 /* ChocoTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChocoTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23B415AA2228302E00283959 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		23B415AC2228302E00283959 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		23B415AE2228302E00283959 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		23B415B12228302E00283959 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		23B415B32228302F00283959 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		23B415B62228302F00283959 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23B415B82228302F00283959 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23B415C22228307B00283959 /* BPIRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPIRepository.swift; sourceTree = "<group>"; };
+		23B415C42228308F00283959 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		23B415C62228319600283959 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		23B415C82228319E00283959 /* RealtimeBPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeBPI.swift; sourceTree = "<group>"; };
+		23B415CA222831C900283959 /* BPICell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPICell.swift; sourceTree = "<group>"; };
+		23B415CC222831ED00283959 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		23B415CE2228320300283959 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		23B415D02228321900283959 /* RealtimeBPIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeBPIViewController.swift; sourceTree = "<group>"; };
+		2C5F6E640493081600B320FA /* Pods-ChocoTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChocoTestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChocoTestApp/Pods-ChocoTestApp.debug.xcconfig"; sourceTree = "<group>"; };
+		40ABD9A39D6A86CE044A868A /* Pods-ChocoTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChocoTestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChocoTestApp/Pods-ChocoTestApp.release.xcconfig"; sourceTree = "<group>"; };
+		F07A6791CDF6F1A580BE2ED9 /* Pods_ChocoTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChocoTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +51,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FFA04FFA1DC72627E33F883 /* Pods_ChocoTestApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		148F70CAB8E5E2075AE3D9A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C5F6E640493081600B320FA /* Pods-ChocoTestApp.debug.xcconfig */,
+				40ABD9A39D6A86CE044A868A /* Pods-ChocoTestApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		23B4159E2228302E00283959 = {
 			isa = PBXGroup;
 			children = (
 				23B415A92228302E00283959 /* ChocoTestApp */,
 				23B415A82228302E00283959 /* Products */,
+				148F70CAB8E5E2075AE3D9A4 /* Pods */,
+				DDAF6880A7C6D674D2219A60 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +88,63 @@
 		23B415A92228302E00283959 /* ChocoTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				23B415BE2228303900283959 /* Globals */,
+				23B415BF2228304000283959 /* Models */,
+				23B415C12228304900283959 /* Controllers */,
+				23B415C02228304500283959 /* Views */,
 				23B415AA2228302E00283959 /* AppDelegate.swift */,
-				23B415AC2228302E00283959 /* FirstViewController.swift */,
-				23B415AE2228302E00283959 /* SecondViewController.swift */,
-				23B415B02228302E00283959 /* Main.storyboard */,
 				23B415B32228302F00283959 /* Assets.xcassets */,
-				23B415B52228302F00283959 /* LaunchScreen.storyboard */,
 				23B415B82228302F00283959 /* Info.plist */,
 			);
 			path = ChocoTestApp;
+			sourceTree = "<group>";
+		};
+		23B415BE2228303900283959 /* Globals */ = {
+			isa = PBXGroup;
+			children = (
+				23B415C22228307B00283959 /* BPIRepository.swift */,
+				23B415C42228308F00283959 /* Settings.swift */,
+			);
+			path = Globals;
+			sourceTree = "<group>";
+		};
+		23B415BF2228304000283959 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				23B415C62228319600283959 /* Response.swift */,
+				23B415C82228319E00283959 /* RealtimeBPI.swift */,
+				2325E27022292CBB0067B951 /* Transaction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		23B415C02228304500283959 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				23B415CA222831C900283959 /* BPICell.swift */,
+				2325E272222931B10067B951 /* TransactionCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		23B415C12228304900283959 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				23B415CC222831ED00283959 /* BaseViewController.swift */,
+				23B415CE2228320300283959 /* TabBarController.swift */,
+				23B415D02228321900283959 /* RealtimeBPIViewController.swift */,
+				2325E274222939840067B951 /* TransactionsViewController.swift */,
+				2325E27622293D3C0067B951 /* TransactionDetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DDAF6880A7C6D674D2219A60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F07A6791CDF6F1A580BE2ED9 /* Pods_ChocoTestApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +154,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23B415BB2228302F00283959 /* Build configuration list for PBXNativeTarget "ChocoTestApp" */;
 			buildPhases = (
+				67421D905F51C30783052EED /* [CP] Check Pods Manifest.lock */,
 				23B415A32228302E00283959 /* Sources */,
 				23B415A42228302E00283959 /* Frameworks */,
 				23B415A52228302E00283959 /* Resources */,
+				E2E1B82B1F0522AB193FE1DD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,45 +207,99 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23B415B72228302F00283959 /* LaunchScreen.storyboard in Resources */,
 				23B415B42228302F00283959 /* Assets.xcassets in Resources */,
-				23B415B22228302E00283959 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		67421D905F51C30783052EED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChocoTestApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2E1B82B1F0522AB193FE1DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ChocoTestApp/Pods-ChocoTestApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/EasyPeasy/EasyPeasy.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Sugar/Sugar.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftChart/SwiftChart.framework",
+				"${BUILT_PRODUCTS_DIR}/Tactile/Tactile.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyPeasy.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Sugar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftChart.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Tactile.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChocoTestApp/Pods-ChocoTestApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		23B415A32228302E00283959 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23B415AF2228302E00283959 /* SecondViewController.swift in Sources */,
+				23B415C92228319E00283959 /* RealtimeBPI.swift in Sources */,
+				2325E273222931B10067B951 /* TransactionCell.swift in Sources */,
+				2325E275222939840067B951 /* TransactionsViewController.swift in Sources */,
+				23B415CF2228320300283959 /* TabBarController.swift in Sources */,
+				23B415C72228319600283959 /* Response.swift in Sources */,
+				23B415C52228308F00283959 /* Settings.swift in Sources */,
+				2325E27122292CBB0067B951 /* Transaction.swift in Sources */,
 				23B415AB2228302E00283959 /* AppDelegate.swift in Sources */,
-				23B415AD2228302E00283959 /* FirstViewController.swift in Sources */,
+				23B415D12228321900283959 /* RealtimeBPIViewController.swift in Sources */,
+				2325E27722293D3C0067B951 /* TransactionDetailViewController.swift in Sources */,
+				23B415C32228307B00283959 /* BPIRepository.swift in Sources */,
+				23B415CD222831ED00283959 /* BaseViewController.swift in Sources */,
+				23B415CB222831C900283959 /* BPICell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		23B415B02228302E00283959 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				23B415B12228302E00283959 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		23B415B52228302F00283959 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				23B415B62228302F00283959 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		23B415B92228302F00283959 /* Debug */ = {
@@ -284,6 +420,7 @@
 		};
 		23B415BC2228302F00283959 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C5F6E640493081600B320FA /* Pods-ChocoTestApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,12 +433,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = icyflame.ChocoTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		23B415BD2228302F00283959 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40ABD9A39D6A86CE044A868A /* Pods-ChocoTestApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -314,7 +452,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = icyflame.ChocoTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
