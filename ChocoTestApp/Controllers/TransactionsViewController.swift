@@ -27,8 +27,8 @@ class TransactionsViewController: BaseViewController, UITableViewDataSource, UIT
             $0.register(cellType: TransactionCell.self)
             $0.dataSource = self
             $0.delegate = self
-            $0.rowHeight = 70
-            $0.estimatedRowHeight = 70
+            $0.rowHeight = 90
+            $0.estimatedRowHeight = 90
             $0.separatorStyle = .none
             $0.backgroundColor = .clear
         }
@@ -50,6 +50,7 @@ class TransactionsViewController: BaseViewController, UITableViewDataSource, UIT
     }
     
     fileprivate func configureViews(){
+        self.view.backgroundColor = UIColor(red: 238/255, green: 238/255, blue: 240/255, alpha: 1)
         navigationItem.title = "Transactions for last hour"
         view.addSubview(tableView)
     }

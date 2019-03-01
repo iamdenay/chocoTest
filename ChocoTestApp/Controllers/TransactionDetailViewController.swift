@@ -15,6 +15,11 @@ class TransactionDetailViewController: BaseViewController {
         $0.textAlignment = .left
         if let type = transaction?.typeString{
             $0.text = type
+            if type == "BUY" {
+                $0.textColor = .flatGreen
+            } else {
+                $0.textColor = .flatRed
+            }
         }
     }
     fileprivate lazy var amountLabel = UILabel().then {
@@ -26,6 +31,14 @@ class TransactionDetailViewController: BaseViewController {
             $0.text = amount
         }
     }
+    fileprivate lazy var priceNameLabel = UILabel().then {
+        $0.textColor = textClr
+        $0.font = UIFont.systemFont(ofSize: 18, weight: .medium)
+        $0.numberOfLines = 1
+        $0.textAlignment = .left
+        $0.text = "Purchase price"
+        
+    }
     fileprivate lazy var priceLabel = UILabel().then {
         $0.textColor = textClr
         $0.font = UIFont.systemFont(ofSize: 18, weight: .medium)
@@ -34,6 +47,17 @@ class TransactionDetailViewController: BaseViewController {
         if let price = transaction?.price{
             $0.text = price
         }
+    }
+    fileprivate lazy var bottomSeparator = UIView().then {
+        $0.backgroundColor = UIColor(red: 0.46, green: 0.46, blue: 0.46, alpha: 0.1)
+    }
+    fileprivate lazy var dateNameLabel = UILabel().then {
+        $0.textColor = textClr
+        $0.font = UIFont.systemFont(ofSize: 18, weight: .medium)
+        $0.numberOfLines = 1
+        $0.textAlignment = .left
+        $0.text = "Date"
+        
     }
     fileprivate lazy var dateLabel = UILabel().then {
         $0.textColor = textClr
@@ -46,6 +70,14 @@ class TransactionDetailViewController: BaseViewController {
             $0.text = df.string(from: date)
         }
     }
+    fileprivate lazy var tidNameLabel = UILabel().then {
+        $0.textColor = textClr
+        $0.font = UIFont.systemFont(ofSize: 18, weight: .medium)
+        $0.numberOfLines = 2
+        $0.textAlignment = .left
+        $0.text = "Transaction ID"
+        
+    }
     fileprivate lazy var tidLabel = UILabel().then {
         $0.textColor = textClr
         $0.font = UIFont.systemFont(ofSize: 18, weight: .medium)
@@ -55,9 +87,16 @@ class TransactionDetailViewController: BaseViewController {
             $0.text = String(describing: tid)
         }
     }
+    fileprivate lazy var sumNameLabel = UILabel().then {
+        $0.textColor = textClr
+        $0.font = UIFont.systemFont(ofSize: 18, weight: .bold)
+        $0.numberOfLines = 1
+        $0.textAlignment = .left
+        $0.text = "Total amount"
+    }
     fileprivate lazy var sumLabel = UILabel().then {
         $0.textColor = textClr
-        $0.font = UIFont.systemFont(ofSize: 18, weight: .medium)
+        $0.font = UIFont.systemFont(ofSize: 18, weight: .bold)
         $0.numberOfLines = 2
         $0.textAlignment = .left
         guard let price = transaction?.price, let amount = transaction?.amount else {
@@ -75,33 +114,57 @@ class TransactionDetailViewController: BaseViewController {
     
     
     fileprivate func configureViews(){
-        view.addSubviews(typeLabel, amountLabel, priceLabel, dateLabel, tidLabel, sumLabel)
+        view.addSubviews(typeLabel, amountLabel, priceLabel, priceNameLabel, dateLabel, dateNameLabel, tidLabel, tidNameLabel, sumLabel, sumNameLabel, bottomSeparator)
     }
     
     fileprivate func configureConstraints(){
-        tidLabel.easy.layout(
-            Center()
+        typeLabel.easy.layout(
+            Top(40),
+            CenterX()
         )
         amountLabel.easy.layout(
-            Top(4).to(tidLabel, .bottom),
+            Top(8).to(typeLabel, .bottom),
             CenterX()
+        )
+        bottomSeparator.easy.layout(
+            Top(8).to(amountLabel, .bottom),
+            Left(0),
+            Right(0),
+            Height(1)
+        )
+        tidNameLabel.easy.layout(
+            Left(32),
+            Top(8).to(bottomSeparator, .bottom)
+        )
+        tidLabel.easy.layout(
+            Top(0).to(tidNameLabel, .top),
+            Right(32)
+        )
+        priceNameLabel.easy.layout(
+            Left(32),
+            Top(8).to(tidLabel, .bottom)
         )
         priceLabel.easy.layout(
-            Top(4).to(amountLabel, .bottom),
-            CenterX()
+            Top(0).to(priceNameLabel, .top),
+            Right(32)
+        )
+        dateNameLabel.easy.layout(
+            Left(32),
+            Top(8).to(priceLabel, .bottom)
         )
         dateLabel.easy.layout(
-            Top(4).to(priceLabel, .bottom),
-            CenterX()
+            Top(0).to(dateNameLabel, .top),
+            Right(32)
         )
-        typeLabel.easy.layout(
-            Top(4).to(dateLabel, .bottom),
-            CenterX()
+        sumNameLabel.easy.layout(
+            Left(32),
+            Top(8).to(dateLabel, .bottom)
         )
         sumLabel.easy.layout(
-            Top(4).to(typeLabel, .bottom),
-            CenterX()
+            Top(0).to(sumNameLabel, .top),
+            Right(32)
         )
+        
     }
 }
 

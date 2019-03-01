@@ -2,6 +2,7 @@ import UIKit
 import EasyPeasy
 import Reusable
 import Sugar
+import ChameleonFramework
 
 final class TransactionCell: UITableViewCell, Reusable {
     
@@ -17,8 +18,8 @@ final class TransactionCell: UITableViewCell, Reusable {
     }
     
     fileprivate lazy var dateLabel = UILabel().then {
-        $0.textColor = textClr
-        $0.font = UIFont.systemFont(ofSize: 14, weight: .regular)
+        $0.textColor = .flatGrayDark
+        $0.font = UIFont.systemFont(ofSize: 16, weight: .regular)
         $0.numberOfLines = 0
         $0.adjustsFontSizeToFitWidth = false
         $0.lineBreakMode = NSLineBreakMode.byTruncatingTail
@@ -27,9 +28,13 @@ final class TransactionCell: UITableViewCell, Reusable {
     
     fileprivate lazy var amountLabel = UILabel().then {
         $0.textColor = textClr
-        $0.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+        $0.font = UIFont.systemFont(ofSize: 16, weight: .bold)
         $0.numberOfLines = 0
         $0.textAlignment = .left
+    }
+    
+    fileprivate lazy var bottomSeparator = UIView().then {
+        $0.backgroundColor = UIColor(red: 0.46, green: 0.46, blue: 0.46, alpha: 0.1)
     }
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -47,21 +52,23 @@ final class TransactionCell: UITableViewCell, Reusable {
     }
     
     fileprivate func configureConstraints() {
-        self.container.addSubviews(amountLabel, typeLabel, dateLabel)
+        self.container.addSubviews(amountLabel, typeLabel, dateLabel, bottomSeparator)
         typeLabel.easy.layout(
             Left(16),
-            Top(8)
+            Top(8),
+            Bottom(8).to(bottomSeparator, .top)
         )
         
         dateLabel.easy.layout(
             Left(0).to(typeLabel, .left),
-            Top(2).to(typeLabel, .bottom),
+            Top(8).to(bottomSeparator, .bottom),
             Bottom(8)
         )
         
         amountLabel.easy.layout(
+            Top(8),
             Right(16),
-            CenterY()
+            Bottom(8).to(bottomSeparator, .top)
         )
         container.easy.layout(
             Left(),
@@ -69,17 +76,29 @@ final class TransactionCell: UITableViewCell, Reusable {
             Top(4),
             Bottom(4)
         )
+        
+        bottomSeparator.easy.layout(
+            CenterY(),
+            Left(0),
+            Right(0),
+            Height(1)
+        )
     }
     
     func configure(transaction:Transaction) {
         self.transaction = transaction
-        self.container.backgroundColor = .flatWhite // bg color of visible layer
+        self.container.backgroundColor = .white // bg color of visible layer
         self.backgroundColor = .clear // invisible layer
-        self.container.layer.cornerRadius = 15
+        self.container.layer.cornerRadius = 8
         self.container.layer.masksToBounds = true
         
         if let type = transaction.typeString{
             self.typeLabel.text = type
+            if type == "BUY"{
+                self.typeLabel.textColor = .flatGreen
+            } else {
+                self.typeLabel.textColor = .flatRed
+            }
         }
         if let date = transaction.date{
             let df = DateFormatter()
